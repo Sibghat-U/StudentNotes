@@ -1,0 +1,15 @@
+/.idea/
+.vscode/
+node_modules/
+vendor/
+.env
+*.log
+composer.lock
+.DS_Store
+/.cache/
+/.sass-cache/
+/.terraform/
+Thumbs.db
+*.sql
+uploads/
+*.backup
