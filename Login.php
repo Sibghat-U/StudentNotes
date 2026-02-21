@@ -145,25 +145,50 @@ if (isset($_POST['login'])) {
         border: 1px solid #f87171;
     }
     
-    /* Mobile Responsive */
-    @media (max-width: 480px) {
+    /* Tablet & Medium Screens (481px to 768px) */
+    @media (max-width: 768px) and (min-width: 481px) {
         .login-container {
-            width: 100%;
-            padding: 25px;
-            border-radius: 12px;
+            width: 90%;
+            max-width: 100%;
+            padding: 30px;
         }
         
         .login-container h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 26px;
+            margin-bottom: 22px;
         }
         
         .input-group {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+        }
+        
+        .input-group input {
+            padding: 11px;
+            font-size: 15px;
+        }
+    }
+    
+    /* Small Mobile Phones (320px to 480px) */
+    @media (max-width: 480px) {
+        .login-container {
+            width: 100%;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 10px;
+        }
+        
+        .login-container h2 {
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+        
+        .input-group {
+            margin-bottom: 14px;
         }
         
         .input-group label {
-            font-size: 13px;
+            font-size: 12px;
+            margin-bottom: 5px;
         }
         
         .input-group input {
@@ -174,11 +199,19 @@ if (isset($_POST['login'])) {
         .login-btn {
             padding: 10px;
             font-size: 14px;
+            margin-top: 8px;
         }
         
         .footer-text {
-            font-size: 13px;
-            margin-top: 15px;
+            font-size: 12px;
+            margin-top: 14px;
+        }
+    }
+    
+    /* Large Tablets & Small Desktops (769px and above) */
+    @media (min-width: 769px) {
+        .login-container {
+            width: 380px;
         }
     }
 </style>

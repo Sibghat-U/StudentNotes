@@ -165,25 +165,51 @@ if (isset($_POST['register'])) {
         line-height: 1.5; 
     }
     
-    /* Mobile Responsive */
-    @media (max-width: 480px) {
+    /* Tablet & Medium Screens (481px to 768px) */
+    @media (max-width: 768px) and (min-width: 481px) {
         .signup-container {
-            width: 100%;
-            padding: 25px;
-            border-radius: 12px;
+            width: 90%;
+            max-width: 100%;
+            padding: 30px;
         }
         
         .signup-container h2 {
-            font-size: 24px;
-            margin-bottom: 20px;
+            font-size: 26px;
+            margin-bottom: 22px;
         }
         
         .input-group {
-            margin-bottom: 15px;
+            margin-bottom: 16px;
+        }
+        
+        .input-group input,
+        .input-group select {
+            padding: 11px;
+            font-size: 15px;
+        }
+    }
+    
+    /* Small Mobile Phones (320px to 480px) */
+    @media (max-width: 480px) {
+        .signup-container {
+            width: 100%;
+            padding: 20px;
+            border-radius: 12px;
+            margin: 10px;
+        }
+        
+        .signup-container h2 {
+            font-size: 22px;
+            margin-bottom: 18px;
+        }
+        
+        .input-group {
+            margin-bottom: 14px;
         }
         
         .input-group label {
-            font-size: 13px;
+            font-size: 12px;
+            margin-bottom: 5px;
         }
         
         .input-group input,
@@ -199,8 +225,15 @@ if (isset($_POST['register'])) {
         }
         
         .footer-text {
-            font-size: 13px;
-            margin-top: 15px;
+            font-size: 12px;
+            margin-top: 14px;
+        }
+    }
+    
+    /* Large Tablets & Small Desktops (769px and above) */
+    @media (min-width: 769px) {
+        .signup-container {
+            width: 420px;
         }
     }
 </style>
