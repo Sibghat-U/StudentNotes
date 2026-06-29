@@ -35,5 +35,4 @@ If you still want to run locally during development, you can use XAMPP or simila
 - Update `db.php` with production credentials and remove any local test accounts before going public.
 - Consider restricting access to any installation or test scripts and avoid committing sensitive credentials to the repository.
 
-## License
-This repo has no license specified — add one if you plan to share publicly.
+
